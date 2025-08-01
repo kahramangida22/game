@@ -1,67 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background-color: #f0f2f5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
 .container {
     background-color: white;
-    padding: 40px;
+    padding: 20px 40px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px;
+    width: 90%;
+    max-width: 800px;
 }
-
-.hidden {
-    display: none;
-}
-
-.google-btn {
-    background-color: #4285F4;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s;
-}
-
-.google-btn:hover {
-    background-color: #357ae8;
-}
-
-.google-btn img {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 2px;
-}
-
-#userInfo img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-#logoutBtn {
-    background-color: #db4437;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 20px;
-}
+.hidden { display: none; }
+.google-btn { background-color: #4285F4; color: white; border: none; padding: 12px 24px; border-radius: 4px; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: background-color 0.3s; }
+.google-btn:hover { background-color: #357ae8; }
+.google-btn img { width: 20px; height: 20px; background-color: white; border-radius: 50%; padding: 2px; }
+.site-header { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.site-header h1 { margin: 0; }
+#user-info-nav { display: flex; align-items: center; gap: 15px; }
+#user-info-nav img { width: 40px; height: 40px; border-radius: 50%; }
+.nav-btn { text-decoration: none; background-color: #007bff; color: white; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
+.nav-btn:hover { background-color: #0056b3; }
+#logoutBtn { background-color: #dc3545; color: white; border: none; padding: 8px 12px; border-radius: 4px; font-size: 14px; cursor: pointer; }
+.resource-bar { display: flex; flex-wrap: wrap; gap: 20px; background: #eee; padding: 10px; border-radius: 5px; margin-bottom: 20px; justify-content: center; }
+.resource-item { font-size: 16px; font-weight: 500; }
+.building-card, .unit-training-card { border: 1px solid #ccc; padding: 15px; border-radius: 5px; margin-bottom: 10px; text-align: left; }
+.building-card h3, .unit-training-card h4 { margin-top: 0; }
+.upgrade-btn, .train-input-group button { background-color: #28a745; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; }
+.upgrade-btn:disabled, .train-input-group button:disabled { background-color: #999; cursor: not-allowed; }
+.cost { font-size: 14px; color: #666; }
+.notification-panel { display: flex; gap: 15px; padding: 10px; margin-bottom: 20px; background-color: rgba(255, 255, 255, 0.5); border-radius: 5px; justify-content: center; }
+.notification-icon { font-size: 24px; cursor: pointer; position: relative; }
+.notification-icon.active { color: #dc3545; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.2); } 100% { transform: scale(1); } }
+hr { border: 0; height: 1px; background-color: #eee; margin: 20px 0; }
