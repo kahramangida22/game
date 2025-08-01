@@ -1,0 +1,8 @@
+#map-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); gap: 15px; background-color: #c5e1a5; border: 5px solid #8bc34a; padding: 15px; border-radius: 10px; }
+.map-slot { aspect-ratio: 1 / 1; border: 2px dashed #aed581; border-radius: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 5px; cursor: pointer; transition: transform 0.2s; }
+.map-slot:hover { transform: scale(1.05); }
+.map-slot.empty { background-color: #dcedc8; }
+.map-slot.occupied { background-color: #fff9c4; border: 2px solid #fdd835; }
+.map-slot.mine { background-color: #bbdefb; border: 2px solid #42a5f5; cursor: default; }
+.map-slot .city-name { font-weight: bold; font-size: 14px; }
+.map-slot .owner-name { font-size: 12px; color: #555; }
