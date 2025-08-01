@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krallığın - Testlik.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="site-header">
+            <h1 id="player-city-name">Şehrim</h1>
+            <div id="user-info-nav">
+                <img id="userPhoto" src="" alt="Avatar">
+                <span id="userName"></span>
+                <a href="reports.html" class="nav-btn">Raporlar</a>
+                <a href="alliance.html" class="nav-btn">İttifak</a>
+                <a href="harita.html" class="nav-btn">Harita</a>
+                <button id="logoutBtn">Çıkış Yap</button>
+            </div>
+        </header>
+
+        <div id="notification-panel" class="notification-panel">
+            </div>
+
+        <section id="resources">
+            <h2>Kaynakların</h2>
+            <div class="resource-bar">
+                <div class="resource-item">🪵 Odun: <span id="wood-display">0 / 0</span></div>
+                <div class="resource-item">🏛️ Mermer: <span id="marble-display">0 / 0</span></div>
+                <div class="resource-item">🍇 Şarap: <span id="wine-display">0 / 0</span></div>
+            </div>
+        </section>
+
+        <section id="army">
+            <h2>Ordun</h2>
+            <div id="army-display" class="resource-bar">
+                </div>
+        </section>
+
+        <hr>
+
+        <div style="display: flex; gap: 20px;">
+            <div style="flex: 1;">
+                <h2>Şehir Binaları</h2>
+                <div id="building-list">
+                    </div>
+            </div>
+            <div style="flex: 1;">
+                <h2>Askeri Binalar</h2>
+                <div id="military-section">
+                     </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    
+    <script src="oyun.js"></script>
+</body>
+</html>
