@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Eylem Planı - Testlik.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h2>Hedef: <span id="target-name">...</span></h2>
+        
+        <div id="action-selection">
+            <h3>Yapılacak Eylemi Seç</h3>
+            <button onclick="showActionUI('attack')">Saldırı Düzenle</button>
+            <button onclick="showActionUI('spy')">Casus Gönder</button>
+        </div>
+
+        <div id="attack-ui" class="hidden">
+            <h4>Birlikleri Gönder</h4>
+            <div id="available-units-attack">Yükleniyor...</div>
+            <button id="attack-btn">Orduyu Gönder!</button>
+        </div>
+
+        <div id="spy-ui" class="hidden">
+            <h4>Casusları Gönder</h4>
+            <div id="available-units-spy">Yükleniyor...</div>
+            <button id="spy-btn">Görevi Başlat!</button>
+        </div>
+        
+        <a href="harita.html">İptal</a>
+    </main>
+    <script src="action.js"></script>
+</body>
+</html>
